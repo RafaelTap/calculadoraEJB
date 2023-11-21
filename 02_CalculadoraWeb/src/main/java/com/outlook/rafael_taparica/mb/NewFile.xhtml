@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns="http://xmls.jcp.org/jsf/html"
+	xmlns="http://xmls.jcp.org/jsp/core">
+
+<HEAD>
+<TITLE>Calculadora</TITLE>
+</HEAD>
+
+<body>
+
+	<F:view>
+
+		<h:form>
+
+			<h:outputText value="valor de x:" />
+			<h:inputText value="#{calcMB.x}" />
+
+			<br />
+			<h:outputText value="valor de y:" />
+			<h:inputText value="#{calcMB.y}" />
+
+			<br />
+			<h:commandButton value="Soma" action="#{calcMB.somar}" />
+			<h:commandButton value=”Subtração” action=”#{calcMB.subtrair}” />
+			<h:commandButton value=”Multiplicação” action=”#{calcMB.multiplicar}” />
+			<h:commandButton value=”Dividisão” action=”#{calcMB.dividir}” />
+
+			<br />
+			<h:outputText value=”#{calcMB.resultado}” />>
+
+	</h:form>
+
+	<F:/view>
+
+</body>
+
+</html>
